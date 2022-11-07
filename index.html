@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			function soundClick() {
+				const btn = document.querySelector('.button')
+				const text = document.querySelector('.text')
+				var audio = new Audio()
+				audio.src = 'Mr.Kitty - After Dark (minus).mp3'
+				audio.autoplay = true
+				audio.loop = true
+				text.classList.toggle('active')
+				btn.classList.add('btn')
+			}
+		</script>
+		<title>Мелочь.</title>
+	</head>
+	<body>
+		<audio src="Mr.Kitty - After Dark (minus).mp3"></audio>
+		<video
+			class="bg"
+			src="coverr-cross-on-a-mountain-1957-1080p.mp4"
+			muted
+			autoplay
+			loop
+		></video>
+		<div class="text">
+			<p class="text__content">
+				<hr>
+				Теплом и нежностью облитый, <br />
+				Влюбленный в тело, душу той, <br />
+				В ту, кто нескончаемо заботой осыпает, <br />
+				Не переставая любит <br />
+				Мое тяжелое нутро. <br />
+				<br />
+				Звездой полярной для меня ты стала,<br />
+				Указавшей на тот путь тяжелый, <br />Пройдя который я буду счастлив,<br />
+				И все также любим тобой. <br />
+				Пленененный грезами о каждом дне, <br />Где мы с тобой живем и любим
+				<br />Живу я каждый день, и верю <br />О счастливом будущем с тобой.
+				<br /><br />Сказав однажды - я тебя люблю, <br />Хочу я снова вторить -
+				<br />
+				Моя любимая. <br />Я рядом. <br />Я тебя люблю.
+				<hr>
+			</p>
+		</div>
+		<div class="button">
+			<button onclick="soundClick()">Нажми на меня =)</button>
+		</div>
+	</body>
+</html>
